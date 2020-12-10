@@ -1,0 +1,68 @@
+2020-11-14 13:49:36 [INFO]<1> [] ====================================================================
+2020-11-14 13:49:37 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2020-11-14 13:49:37 [INFO]<1> [] Application Directory: /Users/user/Documents/programming/VisualStudio/CSharp/BSUIR/CSharp-Lab-Tasks/lab2/WindowsService/WindowsService/bin/Debug/netcoreapp3.1/
+2020-11-14 13:49:39 [INFO]<1> [WindowsService.Worker] Start service
+2020-11-14 13:49:39 [WARN]<1> [WindowsService.Worker] Please make sure the InputFolder [] exists, then restart the service.
+2020-11-14 13:49:57 [INFO]<1> [] ====================================================================
+2020-11-14 13:49:57 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2020-11-14 13:49:57 [INFO]<1> [] Application Directory: /Users/user/Documents/programming/VisualStudio/CSharp/BSUIR/CSharp-Lab-Tasks/lab2/WindowsService/WindowsService/bin/Debug/netcoreapp3.1/
+2020-11-14 13:49:57 [INFO]<1> [WindowsService.Worker] Start service
+2020-11-14 13:49:57 [WARN]<1> [WindowsService.Worker] Please make sure the InputFolder [] exists, then restart the service.
+2020-11-14 13:50:56 [INFO]<1> [] ====================================================================
+2020-11-14 13:50:56 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2020-11-14 13:50:56 [INFO]<1> [] Application Directory: /Users/user/Documents/programming/VisualStudio/CSharp/BSUIR/CSharp-Lab-Tasks/lab2/WindowsService/WindowsService/bin/Debug/netcoreapp3.1/
+2020-11-14 13:50:57 [INFO]<1> [WindowsService.Worker] Start service
+2020-11-14 13:50:57 [INFO]<1> [WindowsService.Worker] Binding Events from Input Folder: /Users/user/Documents
+2020-11-14 13:51:43 [INFO]<6> [WindowsService.Worker] InBound Change Event Triggered by [/Users/user/Documents/tracks — копия.txt]
+2020-11-14 13:51:43 [INFO]<6> [WindowsService.ServiceA] In Service A
+2020-11-14 13:51:43 [INFO]<6> [WindowsService.ServiceB] In Service B
+2020-11-14 13:51:43 [INFO]<6> [WindowsService.Worker] Done with Inbound Change Event
+2020-11-14 13:54:40 [INFO]<1> [] ====================================================================
+2020-11-14 13:54:40 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2020-11-14 13:54:40 [INFO]<1> [] Application Directory: /Users/user/Documents/programming/VisualStudio/CSharp/BSUIR/CSharp-Lab-Tasks/lab2/WindowsService/WindowsService/bin/Debug/netcoreapp3.1/
+2020-11-14 13:54:41 [INFO]<1> [WindowsService.Worker] Start service
+2020-11-14 13:54:41 [INFO]<1> [WindowsService.Worker] Binding Events from Input Folder: /Users/user/Documents
+2020-11-14 13:55:05 [INFO]<6> [WindowsService.Worker] InBound Change Event Triggered by [/Users/user/Documents/tracks — копия 2.txt]
+2020-11-14 13:55:05 [INFO]<6> [WindowsService.ServiceA] In Service A
+2020-11-14 13:55:05 [INFO]<6> [WindowsService.ServiceB] In Service B
+2020-11-14 13:55:05 [INFO]<6> [WindowsService.Worker] Done with Inbound Change Event
+2020-11-14 13:56:27 [INFO]<1> [] ====================================================================
+2020-11-14 13:56:27 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2020-11-14 13:56:27 [INFO]<1> [] Application Directory: /Users/user/Documents/programming/VisualStudio/CSharp/BSUIR/CSharp-Lab-Tasks/lab2/WindowsService/WindowsService/bin/Debug/netcoreapp3.1/
+2020-11-14 13:56:28 [INFO]<1> [WindowsService.Worker] Start service
+2020-11-14 13:56:28 [INFO]<1> [WindowsService.Worker] Binding Events from Input Folder: /Users/user/Documents
+2020-11-14 13:56:42 [INFO]<6> [WindowsService.Worker] InBound Change Event Triggered by [/Users/user/Documents/tracks — копия 3.txt]
+2020-11-14 13:56:42 [INFO]<6> [WindowsService.ServiceA] In Service A
+2020-11-14 13:56:42 [INFO]<6> [WindowsService.ServiceB] In Service B
+2020-11-14 13:56:42 [INFO]<6> [WindowsService.Worker] Done with Inbound Change Event
+2020-11-14 14:42:38 [INFO]<1> [] Приложение запущено
+2020-11-14 14:42:39 [INFO]<1> [WindowsService.Worker] Сервис запущен
+2020-11-14 14:42:39 [INFO]<1> [WindowsService.Worker] Считывание событий из файла: /Users/user/Documents/SourseFile
+2020-11-14 14:42:48 [INFO]<6> [WindowsService.Worker] Создан новый файл [/Users/user/Documents/SourseFile/tracks — копия.txt]
+2020-11-14 14:42:48 [INFO]<6> [WindowsService.FileService] In Service A
+2020-11-14 14:42:48 [INFO]<6> [WindowsService.ServiceB] In Service B
+2020-11-14 14:43:08 [INFO]<1> [] Приложение запущено
+2020-11-14 14:43:09 [INFO]<1> [WindowsService.Worker] Сервис запущен
+2020-11-14 14:43:09 [INFO]<1> [WindowsService.Worker] Считывание событий из файла: /Users/user/Documents/SourseFile
+2020-11-14 14:47:05 [INFO]<1> [] Приложение запущено
+2020-11-14 14:47:06 [INFO]<1> [WindowsService.Worker] Сервис запущен
+2020-11-14 14:47:06 [INFO]<1> [WindowsService.Worker] Считывание событий из файла: /Users/user/Documents/SourseFile
+2020-11-14 14:47:10 [INFO]<6> [WindowsService.Worker] Создан новый файл [/Users/user/Documents/SourseFile/tracks — копия 2.txt]
+2020-11-14 14:47:10 [INFO]<6> [WindowsService.FileService] In Service A
+2020-11-14 14:47:10 [INFO]<6> [WindowsService.FileService] /Users/user/Documents/TargetFile
+2020-11-14 14:47:10 [INFO]<6> [WindowsService.ServiceB] In Service B
+2020-11-14 15:28:40 [INFO]<1> [] Приложение запущено
+2020-11-14 15:28:41 [INFO]<1> [WindowsService.Worker] Сервис запущен
+2020-11-14 15:28:41 [INFO]<1> [WindowsService.Worker] Считывание событий из файла: /Users/user/Documents/SourseFile
+2020-11-14 15:28:55 [INFO]<6> [WindowsService.Worker] Создан новый файл [/Users/user/Documents/SourseFile/tracks — копия 3.txt]
+2020-11-14 15:28:55 [INFO]<6> [WindowsService.FileService] In Service A
+2020-11-14 15:28:55 [INFO]<6> [WindowsService.FileService] /Users/user/Documents/TargetFile
+2020-11-14 15:29:56 [INFO]<1> [] Приложение запущено
+2020-11-14 15:29:57 [INFO]<1> [WindowsService.Worker] Сервис запущен
+2020-11-14 15:29:57 [INFO]<1> [WindowsService.Worker] Считывание событий из файла: /Users/user/Documents/SourseFile
+2020-11-14 15:30:05 [INFO]<6> [WindowsService.Worker] Создан новый файл [/Users/user/Documents/SourseFile/tracks — копия 4.txt]
+2020-11-14 15:30:05 [INFO]<6> [WindowsService.FileService] In Service A
+2020-11-14 15:30:05 [INFO]<6> [WindowsService.FileService] /Users/user/Documents/TargetFile
+2020-11-14 15:51:31 [INFO]<1> [] Приложение запущено
+2020-11-14 15:51:32 [INFO]<1> [WindowsService.Worker] Сервис запущен
+2020-11-14 15:51:32 [INFO]<1> [WindowsService.Worker] Считывание событий из файла: /Users/user/Documents/SourseFile

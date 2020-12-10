@@ -1,0 +1,231 @@
+using static System.Console;
+using System.Text;
+using System;
+
+namespace Lab7
+{
+    struct RationalNum : IComparable<RationalNum>, IEquatable<RationalNum>
+    {
+        //сделал поля ридонли
+        public readonly int _firstNum;
+        public readonly int _secondNum;
+
+        public RationalNum(int firstNum) : this(firstNum, 1) {}
+        public RationalNum(int firstNum, int secondNum)
+        {
+           _firstNum = firstNum;
+            _secondNum = secondNum;
+        }
+
+        public int CompareTo(RationalNum comparingNum)
+        { 
+                return _firstNum.CompareTo(comparingNum);
+        }
+
+        //реализация перекрытия
+        public static RationalNum operator +(RationalNum a, RationalNum b)
+        {
+            if (a._secondNum != 0 && b._secondNum != 0)
+            {
+                return new RationalNum(a._firstNum * b._secondNum + 
+                    b._firstNum * a._secondNum, 
+                    a._secondNum * b._secondNum);
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public static RationalNum operator -(RationalNum a, RationalNum b)
+        {
+            if (a._secondNum != 0 && b._secondNum != 0)
+            {
+                return new RationalNum(a._firstNum * b._secondNum -
+                    b._firstNum * a._secondNum, 
+                    a._secondNum * b._secondNum);
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public static RationalNum operator *(RationalNum a, RationalNum b)
+        {
+            if (a._secondNum != 0 && b._secondNum != 0)
+            {
+                return new RationalNum(a._firstNum * b._firstNum, 
+                    a._secondNum * b._secondNum);
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public static RationalNum operator /(RationalNum a, RationalNum b)
+        {
+            if (a._secondNum != 0 && b._secondNum != 0)
+            {
+                return new RationalNum(a._firstNum * b._secondNum, 
+                    a._secondNum * b._firstNum);
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public static bool operator >(RationalNum a, RationalNum b)
+        {
+            if (a._secondNum != 0 && b._secondNum != 0)
+            {
+                return a._firstNum * b._secondNum 
+                    > b._firstNum * a._secondNum;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator <(RationalNum a, RationalNum b)
+        {
+            if (a._secondNum != 0 && b._secondNum != 0)
+            {
+                return a._firstNum * b._secondNum 
+                    < b._firstNum * a._secondNum;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public override bool Equals(object numberToCompare)
+        {
+            return Equals(numberToCompare);
+        }
+
+        public bool Equals(RationalNum numberToCompare)
+        {
+                RationalNum RatNumberToComp = (RationalNum)numberToCompare;
+
+                return (_firstNum == RatNumberToComp._firstNum &&
+                _secondNum == RatNumberToComp._secondNum);
+        }
+
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public static implicit operator RationalNum(string number)
+        {
+            return Parse(number);
+        }
+
+        public static explicit operator string(RationalNum number)
+        {
+            return number.ToString();
+        }
+
+        public static implicit operator RationalNum(int number)
+        {
+            return new RationalNum(number);
+        }
+
+        public static explicit operator int(RationalNum number)
+        {
+            return Convert.ToInt32(number._firstNum / number._secondNum);
+        }
+
+        public static implicit operator RationalNum(double doubleNumber)
+        {
+            return new RationalNum(Convert.ToInt32(doubleNumber * 100), 100);
+        }
+
+        public static explicit operator double(RationalNum number)
+        {
+            return number._firstNum / number._secondNum;
+        }
+
+        public static bool operator ==(RationalNum number1, RationalNum number2)
+        {
+            return number1.Equals(number2);
+        }
+
+        public static bool operator !=(RationalNum number1, RationalNum number2)
+        {
+            return number1.Equals(number2);
+        }
+
+        //представление в виде строки
+        public override string ToString()
+        {
+
+            return (_firstNum.ToString() + "/"
+                  + _secondNum.ToString());
+        }
+
+        //из строки в объект
+        public static RationalNum Parse(string rationNumStr)
+        {
+            try
+            {
+                if (!string.IsNullOrEmpty(rationNumStr))
+                {
+                    if (rationNumStr.IndexOf('/') != -1)
+                    {
+                        string[] numbers = rationNumStr.Split('/');
+
+                        //проверка
+                        for (int i = 0; i < numbers.Length; i++)
+                        {
+                            if (int.Parse(numbers[i]) <= 0
+                                || string.IsNullOrEmpty(numbers[i]))
+                            {
+                                throw new FormatException("Invalid value parcing!");
+                            }
+                        }
+
+                        return new RationalNum(int.Parse(numbers[0]),
+                            int.Parse(numbers[1]));
+                    }
+                    else
+                    {
+                        double enteredNum;
+
+                        try
+                        {
+                            int fractional;
+                            int wholeNum;
+
+                            enteredNum = Convert.ToDouble(rationNumStr);
+
+                            wholeNum = Convert.ToInt32(Math.Floor(enteredNum));
+                            fractional = Convert.ToInt32(Math.Round((enteredNum
+                                - wholeNum), 3) * 1000);
+
+                            return new RationalNum((wholeNum * 1000) + fractional, 1000);
+                        }
+                        catch (FormatException)
+                        {
+                            return 0;
+                        }
+                    }
+                }
+                else
+                {
+                    throw new Exception("Invalid value parcing!");
+                }
+            }
+            catch (FormatException)
+            {
+                return 0;
+            }
+        }
+    }
+}
