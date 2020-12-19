@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DataManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <connectionString>Data Source=DESKTOP-U7SE2UE;Initial Catalog=AdventureWorks2019;Integrated Security=True</connectionString>
+  <Pathtosave>C:\Users\Lenovo\source\repos\AdventureWorks\FilesFromDB</Pathtosave>
+  <Filename>XML_File.xml</Filename>
+  <Schemaname>XMLD_Schema.xsd</Schemaname>
+  <Extension>.xml</Extension>
+  <TargetFolderPath>D:\csharp\Source1</TargetFolderPath>
+</DataManager>
