@@ -1,0 +1,10 @@
+﻿{
+  "SourcePath": "A:\\SourceDirectory",
+  "TargetPath": "A:\\TargetDirectory",
+  "LogFilePath": "A:\\Errors.txt",
+  "NeedToEncrypt": true,
+  "ArchiveOptions": {
+    "NeedToArchive": true,
+    "Level": 1
+  }
+}

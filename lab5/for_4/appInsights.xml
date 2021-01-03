@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<Insights>
+  <Insight>
+    <Message>Connection established</Message>
+    <Time>2020-12-26T15:42:18.927+03:00</Time>
+  </Insight>
+  <Insight>
+    <Message>Customers were received successfully</Message>
+    <Time>2020-12-26T15:42:47.233+03:00</Time>
+  </Insight>
+  <Insight>
+    <Message>Files uploaded</Message>
+    <Time>2020-12-26T15:42:47.44+03:00</Time>
+  </Insight>
+  <Insight>
+    <Message>Stop</Message>
+    <Time>2020-12-26T15:42:47.453+03:00</Time>
+  </Insight>
+</Insights>

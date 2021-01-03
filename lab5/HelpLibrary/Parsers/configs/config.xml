@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<DataOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConnectionPath>Data Source=DESKTOP-AQDVQ37;Initial Catalog=AdventureWorks2019;Integrated Security=True</ConnectionPath>
+  <SourcePath>A:\\SourceDirectory</SourcePath>
+  <TargetPath>A:\\TargetDirectory</TargetPath>
+  <LoggerConnectionPath>Data Source=DESKTOP-AQDVQ37;Initial Catalog=ApplicationInsights;Integrated Security=True</LoggerConnectionPath>
+</DataOptions>
