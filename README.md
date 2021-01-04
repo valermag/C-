@@ -1,11 +1,11 @@
 # C-
 Изменены такие файлы , как :
 
-HelpLibrary\DataClasses\DataBaseWorker.cs
-HelpLibrary\DataClasses\FileTrancser.cs
-HelpLibrary\DataClasses\XmlGenerator.cs
-lab3\FileManager.cs
-lab3\Logger.cs
-lab3\Program.cs
-lab4\DataManager.cs
-lab4\Program.cs
+1.HelpLibrary\DataClasses\DataBaseWorker.cs
+2.HelpLibrary\DataClasses\FileTrancser.cs
+3.HelpLibrary\DataClasses\XmlGenerator.cs
+4.lab3\FileManager.cs
+5.lab3\Logger.cs
+6.lab3\Program.cs
+7.4_lab\DataManager.cs
+8.4_lab\Program.cs
